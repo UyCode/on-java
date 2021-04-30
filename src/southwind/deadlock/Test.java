@@ -17,7 +17,7 @@ public class Test {
 
         Thread thread = new Thread(runnable1, "线程1");
         thread.start();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         Thread thread2 = new Thread(runnable2, "线程2");
         thread2.start();
     }
