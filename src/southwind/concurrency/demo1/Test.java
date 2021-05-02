@@ -22,6 +22,7 @@ public class Test {
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
+        //因为FutureTask对同一个对象进行缓存，第二个线程开启任务的时候不会被执行。
         Thread thread1 = new Thread(task);
         thread1.start();
 
