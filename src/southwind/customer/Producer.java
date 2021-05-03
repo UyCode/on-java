@@ -21,7 +21,7 @@ public class Producer {
             try {
                 Hamburger hamburger = new Hamburger(i);
                 this.container.push(hamburger);
-                TimeUnit.SECONDS.sleep(1);
+                TimeUnit.MILLISECONDS.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

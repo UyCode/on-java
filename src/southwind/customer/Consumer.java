@@ -1,6 +1,5 @@
 package southwind.customer;
 
-import java.beans.Customizer;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -21,7 +20,7 @@ public class Consumer {
         for (int i = 0; i < 30; i++) {
             this.container.pop();
             try {
-                TimeUnit.SECONDS.sleep(1);
+                TimeUnit.MILLISECONDS.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

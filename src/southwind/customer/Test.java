@@ -14,8 +14,8 @@ public class Test {
         Consumer consumer = new Consumer(container);
 
         new Thread(() -> {producer.product();}, "生产者A").start();
-        new Thread(() -> {producer.product();}, "生产者B").start();
         new Thread(() -> {consumer.consume();}, "消费者A").start();
+        new Thread(() -> {producer.product();}, "生产者B").start();
         new Thread(() -> {consumer.consume();}, "消费者B").start();
     }
 }

@@ -26,7 +26,7 @@ class TimeLock {
         String threadName = Thread.currentThread().getName();
 
         try {
-            if (lock.tryLock(3, TimeUnit.SECONDS)) {
+            if (lock.tryLock(6, TimeUnit.SECONDS)) {
                 System.out.println(threadName + "获取了锁");
                 TimeUnit.SECONDS.sleep(5);
             } else {
