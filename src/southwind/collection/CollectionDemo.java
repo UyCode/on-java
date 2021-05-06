@@ -1,6 +1,7 @@
 package southwind.collection;
 
 import java.util.Collection;
+import java.util.Vector;
 
 /**
  * @author ahmatjan(UyCode)
@@ -10,6 +11,6 @@ import java.util.Collection;
 
 public class CollectionDemo {
     public static void main(String[] args) {
-        Collection collection = null;
+        Collection collection = new Vector();
     }
 }
