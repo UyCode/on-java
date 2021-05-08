@@ -1,9 +1,6 @@
 package southwind.collection;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @author ahmatjan(UyCode)
@@ -13,7 +10,7 @@ import java.util.Set;
 
 public class SetDemo {
     public static void main(String[] args) {
-        /*Set set = new HashSet();
+        Set set = new HashSet();
         set.add("Hello");
         set.add("World");
         set.add("Java");
@@ -29,9 +26,9 @@ public class SetDemo {
         Iterator iterator1 = set.iterator();
         while (iterator1.hasNext()) {
             System.out.println(iterator1.next());
-        }*/
+        }
 
-        /*LinkedHashSet hashSet = new LinkedHashSet<>();
+        LinkedHashSet hashSet = new LinkedHashSet<>();
         hashSet.add("Hello");
         hashSet.add("World");
         hashSet.add("Hello");
@@ -40,10 +37,10 @@ public class SetDemo {
         System.out.println("长度为：" + hashSet.size());
         System.out.println("----------------------");
 
-        Iterator iterator = hashSet.iterator();
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
-        }*/
+        Iterator iterator2 = hashSet.iterator();
+        while (iterator2.hasNext()) {
+            System.out.println(iterator2.next());
+        }
 
         LinkedHashSet hashSet1 = new LinkedHashSet<>();
         A a = new A(1);
@@ -55,6 +52,32 @@ public class SetDemo {
         hashSet1.add(1);
 
         System.out.println(hashSet1);
+
+        TreeSet treeSet = new TreeSet<>();
+        /*treeSet.add(1);
+        treeSet.add(4);
+        treeSet.add(2);
+        treeSet.add(6);
+        treeSet.add(5);
+        treeSet.add(1);
+        treeSet.add("a");
+        treeSet.add("d");
+        treeSet.add("b");
+        treeSet.add("c");*/
+        treeSet.add(new A(1));
+        treeSet.add(new A(3));
+        treeSet.add(new A(5));
+        treeSet.add(new A(4));
+        treeSet.add(new A(2));
+
+        System.out.println("TreeSet的长度是：" + treeSet.size());
+
+        System.out.println("-------------------");
+        Iterator iterator3 = treeSet.iterator();
+        while (iterator3.hasNext()) {
+            System.out.println(iterator3.next());
+        }
+
 
     }
 
