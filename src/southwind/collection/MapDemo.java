@@ -1,9 +1,6 @@
 package southwind.collection;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @author ahmatjan(UyCode)
@@ -13,7 +10,7 @@ import java.util.Set;
 
 public class MapDemo {
     public static void main(String[] args) {
-        HashMap<Integer, A> map = new HashMap<>();
+        /*HashMap<Integer, A> map = new HashMap<>();
         map.put(1, new A(1));
         map.put(2, new A(2));
         map.put(3, new A(1));
@@ -44,7 +41,20 @@ public class MapDemo {
             Integer key = (Integer) iterator.next();
             A value = (A) map.get(key);
             System.out.println(key + "--" + value);
-        }
+        }*/
 
+        TreeMap treeMap = new TreeMap<>();
+        treeMap.put(1, "Java");
+        treeMap.put(6, "Spring");
+        treeMap.put(7, "Boot");
+        treeMap.put(3, "Learn");
+        treeMap.put(4, "JavaEE");
+        System.out.println(treeMap);
+        Iterator iterator1 = treeMap.keySet().iterator();
+        while (iterator1.hasNext()) {
+            Integer key = (Integer) iterator1.next();
+            String value = (String) treeMap.get(key);
+            System.out.println(key + "--" + value);
+        }
     }
 }
