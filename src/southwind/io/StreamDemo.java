@@ -22,6 +22,8 @@ public class StreamDemo {
                 }
                 System.out.println(lengths);
 
+                inputStream.close();
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
