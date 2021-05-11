@@ -8,12 +8,15 @@ package southwind.string;
 
 public class StringBufferDemo {
     public static void main(String[] args) {
-        StringBuffer stringBuilder = new StringBuffer("Hello");
-        StringBuffer stringBuilder1 = new StringBuffer();
-        stringBuilder1.append("Hello");
-        System.out.println(stringBuilder);
-        System.out.println(stringBuilder.length());
-        System.out.println(stringBuilder1.length());
+        StringBuffer stringBuffer = new StringBuffer("Hello");
+        StringBuffer stringBuffer1 = new StringBuffer();
+        stringBuffer1.append("Hello");
+        System.out.println(stringBuffer);
+        System.out.println(stringBuffer.length());
+        System.out.println(stringBuffer1.length());
+        System.out.println(stringBuffer1.charAt(3));
+
+
 
 
     }
