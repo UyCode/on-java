@@ -1,4 +1,4 @@
-package southwind.concurrency;
+package southwind.concurrency.demo1;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
