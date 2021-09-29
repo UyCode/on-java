@@ -25,5 +25,14 @@ public class LambdaTest {
         };
         statement.testStatement();
 
+        StatementWithParam statementWithParam = null;
+        statementWithParam = (String param) -> {
+            System.out.println("statement with param: "+ param);
+        };
+        statementWithParam.StatementWithParam("Hello World");
+
+        statementWithParam = (String param) -> System.out.println(param);
+
+        statementWithParam.StatementWithParam("One Line");
     }
 }

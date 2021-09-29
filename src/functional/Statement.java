@@ -8,5 +8,7 @@ package functional;
 
 public interface Statement {
 
+
     void testStatement();
+
 }
