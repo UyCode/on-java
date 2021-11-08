@@ -62,7 +62,7 @@ public class TestRunner {
 
         System.out.println("------------------------");
 
-        // get all public constructor of the object.
+        // get all public constructors of the object.
         Constructor[] constructors = student.getConstructors();
 
         for (Constructor constructor : constructors) {
@@ -71,7 +71,7 @@ public class TestRunner {
 
         System.out.println("------------------------");
 
-        // get all constructor of the object.
+        // get all constructors of the object.
         Constructor[] declaredConstructor = student.getDeclaredConstructors();
 
         for (Constructor constructor : declaredConstructor) {
