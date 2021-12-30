@@ -16,13 +16,16 @@ public class Test {
         InputStream inputStream = new FileInputStream(file);
         OutputStream outputStream = new FileOutputStream(file);
 
-        Reader reader = new FileReader(file);
-        Writer writer = new FileWriter(file);
-
         //处理流
         InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream);
 
+
+        // node flow
+        Reader reader = new FileReader(file);
+        Writer writer = new FileWriter(file);
+
+        InputStream inputStream1 = new BufferedInputStream(new FileInputStream(file));
 
     }
 }
