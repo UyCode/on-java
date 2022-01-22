@@ -1,7 +1,6 @@
 package algorithm;
 
 import algorithm.sort.QuickSort;
-import algorithm.sort.QuickSortNonRecursive;
 import org.apache.lucene.util.RamUsageEstimator;
 
 /**
