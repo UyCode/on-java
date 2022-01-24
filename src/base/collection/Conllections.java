@@ -1,5 +1,7 @@
 package base.collection;
 
+import com.google.common.collect.ImmutableList;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -20,6 +22,8 @@ public class Conllections {
         people.add(new Person("ahmat1", 26));
         Map<String, Integer> map = people.stream().collect(Collectors.toMap(Person::getName, Person::getAge));
         System.out.println(map.get("ahmat"));
+        List<Person> list = ImmutableList.copyOf(people);
+        list.forEach(val -> System.out.println(val.getName() + " : " + val.getAge()));
     }
 
 }
