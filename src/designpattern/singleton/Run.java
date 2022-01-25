@@ -1,5 +1,7 @@
 package designpattern.singleton;
 
+import concurrency.Singleton;
+
 /**
  * @author ahmatjan(UyCode)
  * @email Hyper-Hack@outlook.com
@@ -9,12 +11,8 @@ package designpattern.singleton;
 public class Run {
     public static void main(String[] args) {
         for (int i = 0; i <10; i++) {
-            //Single.getInstance();
-
             // use multi-thread mode, then it will create many instance unless use synchronized.
-            new Thread(() -> {
-                Single.getInstance();
-            }).start();
+            new Thread(() -> Singleton.getInstance()).start();
         }
     }
 }
